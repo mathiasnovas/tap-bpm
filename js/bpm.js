@@ -6,7 +6,8 @@ jQuery(function ($) {
 
     $(document).on('click', function () {
         var timeNow = (new Date()).getTime(),
-            sum = 0;
+            sum = 0,
+            bpm = 0;
 
         if (count > 0) {
             var diff = (timeNow - lastClick) / 1000,
@@ -18,8 +19,10 @@ jQuery(function ($) {
                 sum += pool[i];
             }
 
-            canvas.html(Math.round(sum/pool.length));
+            bpm = Math.round(sum/pool.length);
         }
+
+        canvas.html(bpm);
 
         lastClick = timeNow;
         count ++;
