@@ -67,7 +67,7 @@ jQuery(function ($) {
     }
 
     /**
-     * Start the BPM mapping when clicking the document.
+     * Start the BPM mapping when clicking the document or hitting a key.
      *
      * It will always be 0 the first time you click as two values
      * are necessary to calculate the BPM.
