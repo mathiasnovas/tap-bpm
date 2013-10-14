@@ -11,15 +11,20 @@ jQuery(function ($) {
 
         if (count > 0) {
             var diff = (timeNow - lastClick) / 1000,
-                hardBPM = 60/diff;
+                hardBpm = 60 / diff;
 
-            pool.push(hardBPM);
+            pool.push(hardBpm);
 
             for (var i = 0; i < pool.length; i++) {
                 sum += pool[i];
             }
 
-            bpm = Math.round(sum/pool.length);
+            bpm = Math.round(sum / pool.length);
+
+            if (count === 10) {
+                pool = [];
+                count = 1;
+            }
         }
 
         canvas.html(bpm);
