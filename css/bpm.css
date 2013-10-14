@@ -1,0 +1,36 @@
+/**
+ * Generic
+ */
+body {
+    background: #fafafa;
+    font-size: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Tip
+ */
+.tip {
+    text-align: center;    
+}
+
+/**
+ * Canvas
+ */
+#canvas {
+    font-size: 4em;
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
