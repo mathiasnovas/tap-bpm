@@ -89,6 +89,7 @@ jQuery(function ($) {
             // Empty the value pool every 10th click.
             if (count === 10) {
                 pool.flush();
+                count = 1;
             }
         }
 
