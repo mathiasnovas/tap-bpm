@@ -6,7 +6,7 @@ jQuery(function ($) {
     var lastClick = 0,
         doc = $(document),
         count = 0,
-        canvas = $('#canvas');
+        canvas = $('#canvas p');
 
     /**
      * Various calculations

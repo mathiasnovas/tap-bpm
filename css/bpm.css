@@ -7,19 +7,6 @@ body {
     font-family: 'Myriad Pro', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/**
- * Canvas
- */
-#canvas {
-    font-size: 10em;
-    height: 100px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -27,3 +14,47 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+p {
+    margin: 0;
+}
+
+/**
+ * Canvas
+ */
+#canvas {
+    cursor: default;
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+    #canvas p {
+        color: fuchsia;
+        font-size: 10em;
+        text-shadow: 2px 2px 0 #A000A5;
+    }
+    #canvas p:after {
+        content: 'avg. bpm';
+        color: #666;
+        font-size: .2em;
+        margin-left: 1em;
+        text-shadow: none;
+    }
+
+/**
+ * Tip box
+ */
+.tip {
+    background: #dcdcdc;
+    border-bottom: 5px solid #ccc;
+    padding: 1em 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+    .tip p {
+        color: #666;
+    }
