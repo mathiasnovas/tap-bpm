@@ -62,7 +62,7 @@ jQuery(function ($) {
          * Clear the pool.
          */
         flush: function () {
-            pool = [];
+            pool.array = [];
         }
     }
 
