@@ -93,6 +93,14 @@ jQuery(function ($) {
             }
         }
 
+        canvas.stop().animate({
+            opacity: 0.25
+        }, 10, function () {
+            canvas.animate({
+                opacity: 1
+            });
+        });
+
         // Display the BPM
         canvas.html(bpm);
 

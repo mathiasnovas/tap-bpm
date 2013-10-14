@@ -33,6 +33,7 @@ p {
     #canvas p {
         color: fuchsia;
         font-size: 10em;
+        opacity: 1;
         text-shadow: 2px 2px 0 #A000A5;
     }
     #canvas p:after {
