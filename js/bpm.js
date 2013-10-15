@@ -72,7 +72,7 @@ jQuery(function ($) {
      * It will always be 0 the first time you click as two values
      * are necessary to calculate the BPM.
      */
-    doc.on('click keydown', function () {
+    doc.on('click keydown tap', function () {
         var timeNow = (new Date()).getTime(),
             bpm = 0;
 
