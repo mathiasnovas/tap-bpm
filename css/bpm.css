@@ -43,6 +43,7 @@ p {
         margin-left: 1em;
         text-shadow: none;
     }
+/* Mobile */
 @media only screen and (max-width: 767px) {
     #canvas p:after {
         display: block;
@@ -64,3 +65,12 @@ p {
     .tip p {
         color: #666;
     }
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .tip {
+        padding: 1em;
+    }
+        .tip p {
+            font-size: 1em;
+        }
+}
