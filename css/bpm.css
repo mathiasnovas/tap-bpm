@@ -43,6 +43,11 @@ p {
         margin-left: 1em;
         text-shadow: none;
     }
+@media only screen and (max-width: 767px) {
+    #canvas p:after {
+        display: block;
+    }
+}
 
 /**
  * Tip box
