@@ -93,12 +93,13 @@ jQuery(function ($) {
             }
         }
 
+        // Animate "Flash" effect
         canvas.stop().animate({
             opacity: 0.25
         }, 10, function () {
             canvas.animate({
                 opacity: 1
-            });
+            }, 100);
         });
 
         // Display the BPM
