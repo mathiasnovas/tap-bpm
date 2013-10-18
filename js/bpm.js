@@ -63,6 +63,12 @@ jQuery(function ($) {
          */
         flush: function () {
             pool.array = [];
+        },
+        /**
+         * Advance the array by releasing the oldest value and appending a new one.
+         */
+        advance: function () {
+            pool.array.shift();
         }
     }
 
@@ -81,16 +87,15 @@ jQuery(function ($) {
             var difference = calculate.difference(timeNow, lastClick),
                 rawBpm = 60 / difference;
 
+            // Advance the value pool after the 10th click.
+            if (count > 10) {
+                pool.advance();
+            }
+
             pool.add(rawBpm);
 
             // Get the average BPM.
-            bpm = Math.round(calculate.average(pool.array));
-
-            // Empty the value pool every 10th click.
-            if (count === 10) {
-                pool.flush();
-                count = 1;
-            }
+            bpm = calculate.average(pool.array).toFixed(2);
         }
 
         // Animate "Flash" effect
