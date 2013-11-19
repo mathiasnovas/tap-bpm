@@ -26,6 +26,7 @@ jQuery(function ($) {
         difference: function (now, last) {
             return (now - last) / 1000;
         },
+
         /**
          * Return the average value of an array
          *
@@ -50,6 +51,7 @@ jQuery(function ($) {
      */
     var pool = {
         array: [],
+
         /**
          * Add value to the pool.
          *
@@ -58,12 +60,14 @@ jQuery(function ($) {
         add: function (val) {
             pool.array.push(val);
         },
+
         /**
          * Clear the pool.
          */
         flush: function () {
             pool.array = [];
         },
+
         /**
          * Advance the array by releasing the oldest value and appending a new one.
          */
