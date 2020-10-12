@@ -1,0 +1,216 @@
+# Logfile created on 2020-10-12 22:01:20 +0200 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:01:20 +0200 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [70c9a696] Running /usr/bin/env mkdir -p /tmp as root@157.230.116.54
+ DEBUG [70c9a696] Command: /usr/bin/env mkdir -p /tmp
+  INFO [70c9a696] Finished in 1.408 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 100.0%
+  INFO [da93fcc5] Running /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh as root@157.230.116.54
+ DEBUG [da93fcc5] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh
+  INFO [da93fcc5] Finished in 0.215 seconds with exit status 0 (successful).
+  INFO [e4462ec0] Running /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD as root@157.230.116.54
+ DEBUG [e4462ec0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD )
+ DEBUG [e4462ec0] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1	HEAD
+  INFO [e4462ec0] Finished in 1.698 seconds with exit status 0 (successful).
+  INFO [5fbaa731] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases as root@157.230.116.54
+ DEBUG [5fbaa731] Command: /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases
+  INFO [5fbaa731] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:03:11 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [20ac3280] Running /usr/bin/env mkdir -p /tmp as root@157.230.116.54
+ DEBUG [20ac3280] Command: /usr/bin/env mkdir -p /tmp
+  INFO [20ac3280] Finished in 1.391 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 100.0%
+  INFO [d39d7a7d] Running /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh as root@157.230.116.54
+ DEBUG [d39d7a7d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh
+  INFO [d39d7a7d] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [d26ec7e4] Running /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD as root@157.230.116.54
+ DEBUG [d26ec7e4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD )
+ DEBUG [d26ec7e4] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1	HEAD
+  INFO [d26ec7e4] Finished in 1.582 seconds with exit status 0 (successful).
+  INFO [56628975] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases as root@157.230.116.54
+ DEBUG [56628975] Command: /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases
+  INFO [56628975] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [3827e064] Running [ -f /srv/users/serverpilot/apps/tempotito/current/REVISION ] as root@157.230.116.54
+ DEBUG [3827e064] Command: [ -f /srv/users/serverpilot/apps/tempotito/current/REVISION ]
+ DEBUG [3827e064] Finished in 0.356 seconds with exit status 1 (failed).
+ DEBUG [68f9404e] Running [ -f /srv/users/serverpilot/apps/tempotito/repo/HEAD ] as root@157.230.116.54
+ DEBUG [68f9404e] Command: [ -f /srv/users/serverpilot/apps/tempotito/repo/HEAD ]
+ DEBUG [68f9404e] Finished in 0.338 seconds with exit status 1 (failed).
+ DEBUG [74c165cd] Running if test ! -d /srv/users/serverpilot/apps/tempotito; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [74c165cd] Command: if test ! -d /srv/users/serverpilot/apps/tempotito; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito'" 1>&2; false; fi
+ DEBUG [74c165cd] Finished in 0.299 seconds with exit status 0 (successful).
+  INFO [7a25e036] Running /usr/bin/env git clone --mirror git@github.com:mathiasnovas/tap-bpm.git /srv/users/serverpilot/apps/tempotito/repo as root@157.230.116.54
+ DEBUG [7a25e036] Command: cd /srv/users/serverpilot/apps/tempotito && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git clone --mirror git@github.com:mathiasnovas/tap-bpm.git /srv/users/serverpilot/apps/tempotito/repo )
+ DEBUG [7a25e036] 	Cloning into bare repository '/srv/users/serverpilot/apps/tempotito/repo'...
+  INFO [7a25e036] Finished in 1.751 seconds with exit status 0 (successful).
+ DEBUG [a20680b4] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [a20680b4] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [a20680b4] Finished in 0.211 seconds with exit status 0 (successful).
+  INFO [996f1bff] Running /usr/bin/env git remote set-url origin git@github.com:mathiasnovas/tap-bpm.git as root@157.230.116.54
+ DEBUG [996f1bff] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git remote set-url origin git@github.com:mathiasnovas/tap-bpm.git )
+  INFO [996f1bff] Finished in 0.222 seconds with exit status 0 (successful).
+  INFO [759eb528] Running /usr/bin/env git remote update --prune as root@157.230.116.54
+ DEBUG [759eb528] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [759eb528] 	Fetching origin
+  INFO [759eb528] Finished in 1.700 seconds with exit status 0 (successful).
+ DEBUG [d1a91950] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [d1a91950] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [d1a91950] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [917c2521] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/releases/20201012200316 as root@157.230.116.54
+ DEBUG [917c2521] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/releases/20201012200316 )
+  INFO [917c2521] Finished in 0.199 seconds with exit status 0 (successful).
+  INFO [5b74804e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/users/serverpilot/apps/tempotito/releases/20201012200316 as root@157.230.116.54
+ DEBUG [5b74804e] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/users/serverpilot/apps/tempotito/releases/20201012200316 )
+  INFO [5b74804e] Finished in 0.193 seconds with exit status 0 (successful).
+ DEBUG [c3848ab4] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [c3848ab4] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [c3848ab4] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG [c008293e] Running /usr/bin/env git rev-list --max-count=1 master as root@157.230.116.54
+ DEBUG [c008293e] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c008293e] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1
+ DEBUG [c008293e] Finished in 0.206 seconds with exit status 0 (successful).
+ DEBUG [7913f1a2] Running if test ! -d /srv/users/serverpilot/apps/tempotito/releases/20201012200316; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases/20201012200316'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [7913f1a2] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/releases/20201012200316; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases/20201012200316'" 1>&2; false; fi
+ DEBUG [7913f1a2] Finished in 0.228 seconds with exit status 0 (successful).
+  INFO [9be7a36e] Running /usr/bin/env echo "257fb712e9d0c672b9ca476d801f1c3321a0f9b1" > REVISION as root@157.230.116.54
+ DEBUG [9be7a36e] Command: cd /srv/users/serverpilot/apps/tempotito/releases/20201012200316 && /usr/bin/env echo "257fb712e9d0c672b9ca476d801f1c3321a0f9b1" > REVISION
+  INFO [9be7a36e] Finished in 0.303 seconds with exit status 0 (successful).
+  INFO [7484d03b] Running /usr/bin/env ln -s /srv/users/serverpilot/apps/tempotito/releases/20201012200316 /srv/users/serverpilot/apps/tempotito/releases/current as root@157.230.116.54
+ DEBUG [7484d03b] Command: /usr/bin/env ln -s /srv/users/serverpilot/apps/tempotito/releases/20201012200316 /srv/users/serverpilot/apps/tempotito/releases/current
+  INFO [7484d03b] Finished in 0.287 seconds with exit status 0 (successful).
+  INFO [2007cfa8] Running /usr/bin/env mv /srv/users/serverpilot/apps/tempotito/releases/current /srv/users/serverpilot/apps/tempotito as root@157.230.116.54
+ DEBUG [2007cfa8] Command: /usr/bin/env mv /srv/users/serverpilot/apps/tempotito/releases/current /srv/users/serverpilot/apps/tempotito
+  INFO [2007cfa8] Finished in 0.231 seconds with exit status 0 (successful).
+ DEBUG [9de5807f] Running /usr/bin/env ls -x /srv/users/serverpilot/apps/tempotito/releases as root@157.230.116.54
+ DEBUG [9de5807f] Command: /usr/bin/env ls -x /srv/users/serverpilot/apps/tempotito/releases
+ DEBUG [9de5807f] 	20201012200316
+ DEBUG [9de5807f] Finished in 0.273 seconds with exit status 0 (successful).
+ DEBUG [97d7bce5] Running if test ! -d /srv/users/serverpilot/apps/tempotito/releases; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases'" 1>&2; false; fi as root@157.230.116.54
+ DEBUG [97d7bce5] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/releases; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases'" 1>&2; false; fi
+ DEBUG [97d7bce5] Finished in 0.242 seconds with exit status 0 (successful).
+  INFO [51b813b1] Running /usr/bin/env echo "Branch master (at 257fb712e9d0c672b9ca476d801f1c3321a0f9b1) deployed as release 20201012200316 by mathiasnovas" >> /srv/users/serverpilot/apps/tempotito/revisions.log as root@157.230.116.54
+ DEBUG [51b813b1] Command: cd /srv/users/serverpilot/apps/tempotito/releases && /usr/bin/env echo "Branch master (at 257fb712e9d0c672b9ca476d801f1c3321a0f9b1) deployed as release 20201012200316 by mathiasnovas" >> /srv/users/serverpilot/apps/tempotito/revisions.log
+  INFO [51b813b1] Finished in 0.192 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:04:33 +0200 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [a46c2d30] Running /usr/bin/env mkdir -p /tmp as serverpilot@157.230.116.54
+ DEBUG [a46c2d30] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a46c2d30] Finished in 1.000 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:05:37 +0200 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [fc7460f8] Running /usr/bin/env mkdir -p /tmp as serverpilot@157.230.116.54
+ DEBUG [fc7460f8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fc7460f8] Finished in 2.100 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:06:15 +0200 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [f4891e34] Running /usr/bin/env mkdir -p /tmp as serverpilot@157.230.116.54
+ DEBUG [f4891e34] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f4891e34] Finished in 1.259 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:07:15 +0200 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [7e30e204] Running /usr/bin/env mkdir -p /tmp as serverpilot@157.230.116.54
+ DEBUG [7e30e204] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7e30e204] Finished in 1.387 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 100.0%
+  INFO [98b1139c] Running /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh as serverpilot@157.230.116.54
+ DEBUG [98b1139c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh
+  INFO [98b1139c] Finished in 0.227 seconds with exit status 0 (successful).
+  INFO [ebd452c0] Running /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD as serverpilot@157.230.116.54
+ DEBUG [ebd452c0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD )
+ DEBUG [ebd452c0] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1	HEAD
+  INFO [ebd452c0] Finished in 2.082 seconds with exit status 0 (successful).
+  INFO [61586939] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases as serverpilot@157.230.116.54
+ DEBUG [61586939] Command: /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases
+  INFO [61586939] Finished in 0.231 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-10-12 22:07:29 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [501ba094] Running /usr/bin/env mkdir -p /tmp as serverpilot@157.230.116.54
+ DEBUG [501ba094] Command: /usr/bin/env mkdir -p /tmp
+  INFO [501ba094] Finished in 1.278 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh 100.0%
+  INFO [71adf34e] Running /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh as serverpilot@157.230.116.54
+ DEBUG [71adf34e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh
+  INFO [71adf34e] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [23432d0f] Running /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD as serverpilot@157.230.116.54
+ DEBUG [23432d0f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git ls-remote git@github.com:mathiasnovas/tap-bpm.git HEAD )
+ DEBUG [23432d0f] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1	HEAD
+  INFO [23432d0f] Finished in 1.740 seconds with exit status 0 (successful).
+  INFO [5f576a5c] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases as serverpilot@157.230.116.54
+ DEBUG [5f576a5c] Command: /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/shared /srv/users/serverpilot/apps/tempotito/releases
+  INFO [5f576a5c] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [fc15d9c1] Running [ -f /srv/users/serverpilot/apps/tempotito/current/REVISION ] as serverpilot@157.230.116.54
+ DEBUG [fc15d9c1] Command: [ -f /srv/users/serverpilot/apps/tempotito/current/REVISION ]
+ DEBUG [fc15d9c1] Finished in 0.226 seconds with exit status 1 (failed).
+ DEBUG [6b418e33] Running [ -f /srv/users/serverpilot/apps/tempotito/repo/HEAD ] as serverpilot@157.230.116.54
+ DEBUG [6b418e33] Command: [ -f /srv/users/serverpilot/apps/tempotito/repo/HEAD ]
+ DEBUG [6b418e33] Finished in 0.146 seconds with exit status 1 (failed).
+ DEBUG [cec4d2d4] Running if test ! -d /srv/users/serverpilot/apps/tempotito; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [cec4d2d4] Command: if test ! -d /srv/users/serverpilot/apps/tempotito; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito'" 1>&2; false; fi
+ DEBUG [cec4d2d4] Finished in 0.298 seconds with exit status 0 (successful).
+  INFO [0cb396df] Running /usr/bin/env git clone --mirror git@github.com:mathiasnovas/tap-bpm.git /srv/users/serverpilot/apps/tempotito/repo as serverpilot@157.230.116.54
+ DEBUG [0cb396df] Command: cd /srv/users/serverpilot/apps/tempotito && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git clone --mirror git@github.com:mathiasnovas/tap-bpm.git /srv/users/serverpilot/apps/tempotito/repo )
+ DEBUG [0cb396df] 	Cloning into bare repository '/srv/users/serverpilot/apps/tempotito/repo'...
+  INFO [0cb396df] Finished in 1.741 seconds with exit status 0 (successful).
+ DEBUG [c30219c9] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [c30219c9] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [c30219c9] Finished in 0.210 seconds with exit status 0 (successful).
+  INFO [4639b9da] Running /usr/bin/env git remote set-url origin git@github.com:mathiasnovas/tap-bpm.git as serverpilot@157.230.116.54
+ DEBUG [4639b9da] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git remote set-url origin git@github.com:mathiasnovas/tap-bpm.git )
+  INFO [4639b9da] Finished in 0.204 seconds with exit status 0 (successful).
+  INFO [20f04867] Running /usr/bin/env git remote update --prune as serverpilot@157.230.116.54
+ DEBUG [20f04867] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [20f04867] 	Fetching origin
+  INFO [20f04867] Finished in 1.639 seconds with exit status 0 (successful).
+ DEBUG [e375f4c1] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [e375f4c1] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [e375f4c1] Finished in 0.208 seconds with exit status 0 (successful).
+  INFO [ff06ce59] Running /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/releases/20201012200734 as serverpilot@157.230.116.54
+ DEBUG [ff06ce59] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env mkdir -p /srv/users/serverpilot/apps/tempotito/releases/20201012200734 )
+  INFO [ff06ce59] Finished in 0.233 seconds with exit status 0 (successful).
+  INFO [87ad70c6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/users/serverpilot/apps/tempotito/releases/20201012200734 as serverpilot@157.230.116.54
+ DEBUG [87ad70c6] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/users/serverpilot/apps/tempotito/releases/20201012200734 )
+  INFO [87ad70c6] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [0baec2c0] Running if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [0baec2c0] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/repo; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/repo'" 1>&2; false; fi
+ DEBUG [0baec2c0] Finished in 0.272 seconds with exit status 0 (successful).
+ DEBUG [81a2e88e] Running /usr/bin/env git rev-list --max-count=1 master as serverpilot@157.230.116.54
+ DEBUG [81a2e88e] Command: cd /srv/users/serverpilot/apps/tempotito/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tap-bpm.git-production-mathiasnovas.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [81a2e88e] 	257fb712e9d0c672b9ca476d801f1c3321a0f9b1
+ DEBUG [81a2e88e] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [571a6f58] Running if test ! -d /srv/users/serverpilot/apps/tempotito/releases/20201012200734; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases/20201012200734'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [571a6f58] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/releases/20201012200734; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases/20201012200734'" 1>&2; false; fi
+ DEBUG [571a6f58] Finished in 0.337 seconds with exit status 0 (successful).
+  INFO [ad65f549] Running /usr/bin/env echo "257fb712e9d0c672b9ca476d801f1c3321a0f9b1" > REVISION as serverpilot@157.230.116.54
+ DEBUG [ad65f549] Command: cd /srv/users/serverpilot/apps/tempotito/releases/20201012200734 && /usr/bin/env echo "257fb712e9d0c672b9ca476d801f1c3321a0f9b1" > REVISION
+  INFO [ad65f549] Finished in 0.254 seconds with exit status 0 (successful).
+  INFO [7b494799] Running /usr/bin/env ln -s /srv/users/serverpilot/apps/tempotito/releases/20201012200734 /srv/users/serverpilot/apps/tempotito/releases/current as serverpilot@157.230.116.54
+ DEBUG [7b494799] Command: /usr/bin/env ln -s /srv/users/serverpilot/apps/tempotito/releases/20201012200734 /srv/users/serverpilot/apps/tempotito/releases/current
+  INFO [7b494799] Finished in 0.384 seconds with exit status 0 (successful).
+  INFO [265c2f4d] Running /usr/bin/env mv /srv/users/serverpilot/apps/tempotito/releases/current /srv/users/serverpilot/apps/tempotito as serverpilot@157.230.116.54
+ DEBUG [265c2f4d] Command: /usr/bin/env mv /srv/users/serverpilot/apps/tempotito/releases/current /srv/users/serverpilot/apps/tempotito
+  INFO [265c2f4d] Finished in 0.291 seconds with exit status 0 (successful).
+ DEBUG [d7713703] Running /usr/bin/env ls -x /srv/users/serverpilot/apps/tempotito/releases as serverpilot@157.230.116.54
+ DEBUG [d7713703] Command: /usr/bin/env ls -x /srv/users/serverpilot/apps/tempotito/releases
+ DEBUG [d7713703] 	20201012200734
+ DEBUG [d7713703] Finished in 0.192 seconds with exit status 0 (successful).
+ DEBUG [1cfdd5e2] Running if test ! -d /srv/users/serverpilot/apps/tempotito/releases; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases'" 1>&2; false; fi as serverpilot@157.230.116.54
+ DEBUG [1cfdd5e2] Command: if test ! -d /srv/users/serverpilot/apps/tempotito/releases; then echo "Directory does not exist '/srv/users/serverpilot/apps/tempotito/releases'" 1>&2; false; fi
+ DEBUG [1cfdd5e2] Finished in 0.191 seconds with exit status 0 (successful).
+  INFO [7a235326] Running /usr/bin/env echo "Branch master (at 257fb712e9d0c672b9ca476d801f1c3321a0f9b1) deployed as release 20201012200734 by mathiasnovas" >> /srv/users/serverpilot/apps/tempotito/revisions.log as serverpilot@157.230.116.54
+ DEBUG [7a235326] Command: cd /srv/users/serverpilot/apps/tempotito/releases && /usr/bin/env echo "Branch master (at 257fb712e9d0c672b9ca476d801f1c3321a0f9b1) deployed as release 20201012200734 by mathiasnovas" >> /srv/users/serverpilot/apps/tempotito/revisions.log
+  INFO [7a235326] Finished in 0.239 seconds with exit status 0 (successful).
